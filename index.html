@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="ECLIPSE — Integrated Secure Data Erasure and Advanced File Recovery Tool for Digital Forensics and Data Sanitization" />
+  <title>ECLIPSE | Smart India Hackathon 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand-wrap">
+      <div class="brand-mark">E</div>
+      <div class="brand-name">ECLIPSE</div>
+    </div>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#overview">Overview</a>
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#technical-approach">Technical Approach</a>
+      <a href="#feasibility">Feasibility</a>
+      <a href="#impact">Impact</a>
+      <a href="#references">References</a>
+      <a href="#prototype">Prototype</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="button button-primary" href="#prototype">View Prototype</a>
+      <a class="button button-secondary" href="#technical-approach">Explore Architecture</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="overview" class="hero section-dark">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Smart India Hackathon 2026</div>
+          <div class="meta-row">Problem Statement ID — 26149</div>
+          <h1>Design and Development of an Integrated Secure Data Erasure and Advanced File Recovery Tool for Digital
+            Forensics and Data Sanitization</h1>
+
+          <div class="hero-meta-grid">
+            <div>
+              <span class="label">Theme</span>
+              <strong>Blockchain &amp; Cybersecurity</strong>
+            </div>
+            <div>
+              <span class="label">Category</span>
+              <strong>Software</strong>
+            </div>
+            <div>
+              <span class="label">Team</span>
+              <strong>Lunar</strong>
+            </div>
+            <div>
+              <span class="label">Product</span>
+              <strong>ECLIPSE</strong>
+            </div>
+          </div>
+
+          <div class="tagline-block">
+            <span>Erase without doubt.</span>
+            <span>Recover without compromise.</span>
+          </div>
+        </div>
+
+        <div class="dashboard-frame" aria-label="ECLIPSE forensic workstation dashboard">
+          <div class="windowbar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="dashboard-header">
+            <div>
+              <span class="mini-label">Case ID</span>
+              <strong>CASE-26149 / LUNAR-07</strong>
+            </div>
+            <span class="status-chip success">Evidence Verified</span>
+          </div>
+
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <span class="meta">Evidence status</span>
+              <strong>CHAINED</strong>
+            </div>
+            <div class="metric-card">
+              <span class="meta">Drive</span>
+              <strong>WD 8TB</strong>
+            </div>
+            <div class="metric-card">
+              <span class="meta">Storage type</span>
+              <strong>NVMe SSD</strong>
+            </div>
+            <div class="metric-card">
+              <span class="meta">Scan mode</span>
+              <strong>FULL</strong>
+            </div>
+            <div class="metric-card">
+              <span class="meta">Recovered files</span>
+              <strong>1,284</strong>
+            </div>
+            <div class="metric-card warning">
+              <span class="meta">Sanitization status</span>
+              <strong>READY</strong>
+            </div>
+            <div class="metric-card ok">
+              <span class="meta">Verification</span>
+              <strong>PASS</strong>
+            </div>
+            <div class="metric-card">
+              <span class="meta">Audit status</span>
+              <strong>SHA-256 LINKED</strong>
+            </div>
+          </div>
+
+          <div class="dashboard-graph">
+            <div class="graph-line">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="graph-legend">
+              <span><i class="bullet blue"></i>Recovered</span>
+              <span><i class="bullet green"></i>Verified</span>
+              <span><i class="bullet amber"></i>Sanitize</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light photo-showcase">
+      <div class="container">
+        <div class="gallery-header">
+          <span class="eyebrow inverse">Forensic Environment</span>
+          <h2>Evidence handling, lab discipline, and investigation workflow</h2>
+        </div>
+
+        <div class="image-gallery" id="imageGallery">
+          <button class="gallery-arrow prev" aria-label="Previous image">←</button>
+          <div class="gallery-window">
+            <figure class="gallery-slide active">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+                alt="Digital forensics analyst at a forensic workstation" />
+              <figcaption>High-trust forensic analysis environment</figcaption>
+            </figure>
+            <figure class="gallery-slide">
+              <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
+                alt="Computer hardware and forensic evidence imaging" />
+              <figcaption>Evidence handling and drive examination</figcaption>
+            </figure>
+            <figure class="gallery-slide">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+                alt="Server equipment in secure data center" />
+              <figcaption>Secure infrastructure and data integrity controls</figcaption>
+            </figure>
+            <figure class="gallery-slide">
+              <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80"
+                alt="Cybersecurity professional working with enterprise systems" />
+              <figcaption>Operational forensic and cybersecurity response</figcaption>
+            </figure>
+          </div>
+          <button class="gallery-arrow next" aria-label="Next image">→</button>
+        </div>
+
+        <div class="gallery-dots" aria-label="Gallery controls">
+          <button class="dot-btn active" aria-label="Go to first image"></button>
+          <button class="dot-btn" aria-label="Go to second image"></button>
+          <button class="dot-btn" aria-label="Go to third image"></button>
+          <button class="dot-btn" aria-label="Go to fourth image"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="problem" class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow inverse">02</span>
+          <h2>The Existing Forensic Workflow Is Fragmented</h2>
+        </div>
+
+        <div class="workflow-viz">
+          <div class="workflow-steps" id="workflowStages">
+            <button class="stage active" data-stage="acquire">ACQUIRE</button>
+            <button class="stage" data-stage="scan">SCAN</button>
+            <button class="stage" data-stage="analyze">ANALYZE</button>
+            <button class="stage" data-stage="sanitize">SANITIZE</button>
+            <button class="stage" data-stage="report">REPORT</button>
+          </div>
+
+          <div id="problemPanel" class="problem-panel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution" class="section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">03</span>
+          <h2>One Integrated Forensic Workflow</h2>
+        </div>
+
+        <div class="workflow-sequence">
+          <span>ACQUIRE</span>
+          <span class="arrow">↓</span>
+          <span>SCAN</span>
+          <span class="arrow">↓</span>
+          <span>ANALYZE</span>
+          <span class="arrow">↓</span>
+          <span>SANITIZE</span>
+          <span class="arrow">↓</span>
+          <span>VERIFY</span>
+          <span class="arrow">↓</span>
+          <span>REPORT</span>
+        </div>
+
+        <div class="comparison-grid">
+          <article class="compare-card">
+            <div class="compare-label">PROBLEM 01</div>
+            <p>Fragmented files are difficult to recover and output confidence may be unclear.</p>
+            <div class="divider"></div>
+            <div class="compare-solution">
+              <span class="label">Direct Solution</span>
+              <strong>SHT fragmentation detection + BGC reassembly + Confidence scoring</strong>
+            </div>
+          </article>
+
+          <article class="compare-card">
+            <div class="compare-label">PROBLEM 02</div>
+            <p>Wrong erasure method for different media, without verification or compliance proof.</p>
+            <div class="divider"></div>
+            <div class="compare-solution">
+              <span class="label">Direct Solution</span>
+              <strong>NIST SP 800-88 compliant erasure + Automatic method selection + Post-wipe verification
+                logging</strong>
+            </div>
+          </article>
+
+          <article class="compare-card">
+            <div class="compare-label">PROBLEM 03</div>
+            <p>Metadata and slack space can survive deletion.</p>
+            <div class="divider"></div>
+            <div class="compare-solution">
+              <span class="label">Direct Solution</span>
+              <strong>Metadata scrubbing + Slack-space cleanup + Journal clearing across supported filesystems</strong>
+            </div>
+          </article>
+
+          <article class="compare-card">
+            <div class="compare-label">PROBLEM 04</div>
+            <p>Multiple tools create multiple logs and disconnected chain of custody.</p>
+            <div class="divider"></div>
+            <div class="compare-solution">
+              <span class="label">Direct Solution</span>
+              <strong>Single hash-chained audit log across the integrated modules, with cryptographic signing.</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="different" class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow inverse">04</span>
+          <h2>What Makes ECLIPSE Different</h2>
+        </div>
+
+        <div class="feature-grid four-up">
+          <article class="feature-card">
+            <div class="feature-index">01</div>
+            <h3>Integration-First Architecture</h3>
+            <p>Unified forensic carving, drive sanitization, and chain-of-custody reporting under one audit log.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-index">02</div>
+            <h3>AI-Quarantined Scan Mode</h3>
+            <p>AI-guided artifact profiling targets high-confidence regions for faster carving.</p>
+            <span class="flag">NON-EXHAUSTIVE</span>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-index">03</div>
+            <h3>Legally Defensible Full Scan</h3>
+            <p>Exhaustive sector-by-sector scanning without AI influence.</p>
+            <div class="small-terms">
+              <span>Deterministic</span>
+              <span>Verifiable</span>
+              <span>Exhaustive</span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-index">04</div>
+            <h3>Indigenous Tool Sovereignty</h3>
+            <p>NIST SP 800-88 + DoD 5220.22-M. Air-gap ready. No foreign black-box dependency.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="technical-approach" class="section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">05</span>
+          <h2>Complete Technical Approach</h2>
+        </div>
+
+        <div class="techstack-row">
+          <div class="stack-card visual-stack">
+            <img src="assets/rust - Copy.png" alt="Rust programming language logo" />
+            <span class="stack-label">RUST</span>
+            <p>Single memory-safe binary. Windows / Linux / macOS. Secure, fast, portable.</p>
+          </div>
+          <div class="stack-card visual-stack">
+            <img src="assets/onnx.png" alt="Microsoft brand illustration" />
+            <span class="stack-label">ONNX</span>
+            <p>Offline and auditable inference. Runs inside Rust binary.</p>
+          </div>
+          <div class="stack-card visual-stack">
+            <img src="assets/xg boost - Copy.png" alt="XGBoost logo" />
+            <span class="stack-label">XGBOOST</span>
+            <p>Feature importance. Forensically explainable AI.</p>
+          </div>
+          <div class="stack-card visual-stack">
+            <img src="assets/sql lite - Copy.jpg" alt="SQLite logo" />
+            <span class="stack-label">SQLITE</span>
+            <p>Serverless storage. Runs inside application process.</p>
+          </div>
+        </div>
+
+        <div class="methodology-grid">
+          <div class="methodology-block">
+            <div class="methodology-title">CASE INTAKE</div>
+            <p>Starts the case with context and purpose.</p>
+          </div>
+          <div class="methodology-block">
+            <div class="methodology-title">DRIVE DETECTION</div>
+            <p>Select the drive and analyze its status.</p>
+          </div>
+          <div class="methodology-block">
+            <div class="methodology-title">DASHBOARD &amp; SCAN SELECTION</div>
+            <p>Use the three scan modes. Display real-time progress.</p>
+          </div>
+          <div class="methodology-block">
+            <div class="methodology-title">RECOVERY / ERASURE / SANITIZATION</div>
+            <p>Execution of the right pathway depending on forensic objective.</p>
+          </div>
+          <div class="methodology-block">
+            <div class="methodology-title">VERIFICATION</div>
+            <p>Validated through the built-in carving engine and audit chain.</p>
+          </div>
+          <div class="methodology-block">
+            <div class="methodology-title">REPORT</div>
+            <p>Generate structured report and chain-of-custody information.</p>
+          </div>
+        </div>
+
+        <div class="architecture-explorer">
+          <div class="explorer-pane">
+            <div class="pane-header">Architecture Explorer</div>
+            <div class="explorer-node node-main">Evidence Intake</div>
+            <div class="explorer-node spine">Drive Detection</div>
+            <div class="explorer-node">Metadata</div>
+            <div class="explorer-node">Hash Verification</div>
+            <div class="explorer-node">Carving Engine</div>
+            <div class="explorer-node">Secure Erasure</div>
+            <div class="explorer-node">Audit Log</div>
+            <div class="explorer-node">Report</div>
+          </div>
+
+          <div class="explorer-details">
+            <div class="mini-label">Workflow</div>
+            <h3>Case intake → Drive detection → Dashboard + scan → Recovery / erasure / sanitization → Verification →
+              Report</h3>
+            <ul>
+              <li>ECLIPSE combines evidence acquisition, forensic scanning, erasure workflow, and verification into a
+                single auditable workflow.</li>
+              <li>SQLITE acts as local serverless evidence store, while Rust handles the core processing and disk I/O.
+              </li>
+              <li>ONNX and XGBOOST are used for targeted AI-assisted analysis but not as a replacement for deterministic
+                forensic analysis.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recovery-engine" class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow inverse">06</span>
+          <h2>Recovery Engine</h2>
+        </div>
+
+        <div class="pipeline-diagram">
+          <div class="pipe-node">RAW INPUT<br /><span>Disk Image (.dd)</span></div>
+          <div class="pipe-arrow">↓</div>
+          <div class="pipe-node">4096-byte blocks</div>
+          <div class="pipe-arrow">↓</div>
+          <div class="pipe-node">BLOCK EXTRACTOR</div>
+          <div class="pipe-arrow">↓</div>
+          <div class="pipe-node">SIGNATURE SCANNER</div>
+          <div class="pipe-arrow">↓</div>
+          <div class="pipe-node">FILE TYPE CLASSIFICATION</div>
+          <div class="pipe-arrow">↓</div>
+          <div class="pipe-node">SHT + BGC</div>
+          <div class="pipe-arrow">↓</div>
+          <div class="pipe-node">BOUNDARY DETECTION</div>
+          <div class="pipe-arrow">↓</div>
+          <div class="pipe-node">REASSEMBLY</div>
+          <div class="pipe-arrow">↓</div>
+          <div class="pipe-node result">FILE RECOVERED</div>
+        </div>
+
+        <div class="technical-notes">
+          <div class="note-block">
+            <h3>Technical details</h3>
+            <ul>
+              <li>Blocks are read sequentially.</li>
+              <li>Aho-Corasick multi-pattern matching classifies blocks.</li>
+              <li>SHT/BGC identify true file boundaries.</li>
+              <li>Sequential testing, forward pass, reverse pass, iterative gap sliding reconstruction.</li>
+              <li>False inclusion is avoided.</li>
+            </ul>
+          </div>
+          <div class="note-block">
+            <h3>Recovered artifact output</h3>
+            <div class="artifact-table">
+              <div class="artifact-row head">
+                <span>LBA Range</span>
+                <span>Classification</span>
+                <span>Confidence Score</span>
+                <span>Recovery Status</span>
+              </div>
+              <div class="artifact-row">
+                <span>0x0012F200 — 0x0012F7FF</span>
+                <span>JPEG</span>
+                <span>0.987</span>
+                <span>Recovered</span>
+              </div>
+              <div class="artifact-row">
+                <span>0x00AA6000 — 0x00AA6DFF</span>
+                <span>DOCX</span>
+                <span>0.942</span>
+                <span>Recovered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="deletion-module" class="section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">07</span>
+          <h2>File &amp; Folder Deletion Module</h2>
+        </div>
+
+        <div class="linear-flow">
+          <span>FILE SELECTED</span>
+          <span class="arrow">↓</span>
+          <span>DETECTION</span>
+          <span class="arrow">↓</span>
+          <span>HDD / SSD</span>
+          <span class="arrow">↓</span>
+          <span>Appropriate deletion path</span>
+          <span class="arrow">↓</span>
+          <span>VERIFICATION</span>
+        </div>
+
+        <div class="two-column-panel">
+          <div class="panel-block">
+            <h3>HDD</h3>
+            <ul>
+              <li>Targeted overwrite</li>
+              <li>Filesystem cleanup</li>
+            </ul>
+          </div>
+          <div class="panel-block">
+            <h3>SSD</h3>
+            <ul>
+              <li>Logical deletion</li>
+              <li>TRIM / deallocation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="verify-box">
+          <h3>Verification</h3>
+          <p>ECLIPSE's own carving engine verifies deletion.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sanitization" class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow inverse">08</span>
+          <h2>Drive Sanitization Module</h2>
+        </div>
+
+        <div class="decision-tree">
+          <div class="tree-step">DRIVE SELECTED</div>
+          <div class="tree-arrow">↓</div>
+          <div class="tree-step">DETECTION</div>
+          <div class="tree-arrow">↓</div>
+          <div class="tree-step emphasis">STORAGE TYPE</div>
+          <div class="tree-arrow">↓</div>
+        </div>
+
+        <div class="type-grid">
+          <div class="type-card">
+            <span class="type-name">HDD</span>
+            <p>Sector Overwrite</p>
+          </div>
+          <div class="type-card">
+            <span class="type-name">SATA SSD</span>
+            <p>CRYPTO Scramble / ATA Sanitize / Secure Erase</p>
+          </div>
+          <div class="type-card">
+            <span class="type-name">NVMe SSD</span>
+            <p>NVMe Sanitize / Secure Erase</p>
+          </div>
+          <div class="type-card">
+            <span class="type-name">SED SSD</span>
+            <p>Crypto Erasure</p>
+          </div>
+        </div>
+
+        <div class="verify-box dark-box">
+          <h3>Verification</h3>
+          <p>Post-wipe verification through ECLIPSE's carving engine.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="scan-modes" class="section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">09</span>
+          <h2>Scan Modes</h2>
+        </div>
+
+        <div class="concept-visuals">
+          <article class="concept-card">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1000&q=80"
+              alt="Fast forensic triage and urgent evidence review" />
+            <div class="concept-copy">
+              <span>Quick Search</span>
+              <strong>Fast triage for obvious evidence</strong>
+            </div>
+          </article>
+          <article class="concept-card">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80"
+              alt="AI-assisted cyber analysis and decision support" />
+            <div class="concept-copy">
+              <span>Targeted AI</span>
+              <strong>High-value regions prioritized intelligently</strong>
+            </div>
+          </article>
+          <article class="concept-card">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80"
+              alt="Deep digital forensic scan on secure server infrastructure" />
+            <div class="concept-copy">
+              <span>Full Search</span>
+              <strong>Complete deterministic review of storage</strong>
+            </div>
+          </article>
+        </div>
+
+        <div class="mode-selector" id="scanModes">
+          <button class="mode active" data-mode="quick">Quick Search</button>
+          <button class="mode" data-mode="targeted">Targeted AI Search</button>
+          <button class="mode" data-mode="full">Full Search</button>
+        </div>
+
+        <div id="scanModeDetail" class="mode-detail"></div>
+      </div>
+    </section>
+
+    <section id="ai-pipeline" class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow inverse">10</span>
+          <h2>AI-Assisted Analysis Without Compromising Forensic Integrity</h2>
+        </div>
+
+        <div class="ai-flow">
+          <span>ARTIFACTS</span>
+          <span>↓</span>
+          <span>XGBOOST</span>
+          <span>↓</span>
+          <span>SMART HEALTH SIGNALS</span>
+          <span>↓</span>
+          <span>CONFIDENCE PENALTY ON DEGRADED REGIONS</span>
+          <span>↓</span>
+          <span>RUST + ONNX</span>
+          <span>↓</span>
+          <span>AI-QUARANTINED OUTPUT</span>
+        </div>
+
+        <div class="ai-warning">
+          <div class="warning-box">
+            <strong>AI results are separately tagged.</strong>
+            <p>AI is used to prioritize high-confidence regions for targeted analysis. Full forensic analysis remains
+              available without AI influence.</p>
+          </div>
+          <div class="warning-box critical">
+            <strong>Primary forensic chain</strong>
+            <p>AI results are excluded from the primary forensic chain. Deterministic full-search remains the
+              authoritative evidence path.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="verification" class="section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">11</span>
+          <h2>Verification Is Part of the Workflow</h2>
+        </div>
+
+        <div class="verification-grid">
+          <div class="verification-card">
+            <h3>Recovery Verification</h3>
+            <ul>
+              <li>Recovered file</li>
+              <li>Classification</li>
+              <li>LBA range</li>
+              <li>Confidence</li>
+              <li>Verification status</li>
+            </ul>
+          </div>
+          <div class="verification-card">
+            <h3>Erasure Verification</h3>
+            <ul>
+              <li>Selected target</li>
+              <li>Erasure method</li>
+              <li>Operation</li>
+              <li>Post-wipe scan</li>
+              <li>Verification status</li>
+            </ul>
+          </div>
+          <div class="verification-card">
+            <h3>Drive Sanitization Verification</h3>
+            <ul>
+              <li>Device</li>
+              <li>Sanitization method</li>
+              <li>Verification</li>
+              <li>Audit record</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="audit" class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow inverse">12</span>
+          <h2>One Chain of Custody Across the Investigation Lifecycle</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-step">CASE CREATED</div>
+          <div class="timeline-arrow">↓</div>
+          <div class="timeline-step">DRIVE IDENTIFIED</div>
+          <div class="timeline-arrow">↓</div>
+          <div class="timeline-step">HASH VERIFIED</div>
+          <div class="timeline-arrow">↓</div>
+          <div class="timeline-step">SCAN STARTED</div>
+          <div class="timeline-arrow">↓</div>
+          <div class="timeline-step">RECOVERY / SANITIZATION</div>
+          <div class="timeline-arrow">↓</div>
+          <div class="timeline-step">VERIFICATION</div>
+          <div class="timeline-arrow">↓</div>
+          <div class="timeline-step">REPORT GENERATED</div>
+        </div>
+
+        <div class="hash-chain-wrap">
+          <div class="hash-chain">
+            <div class="chain-entry">
+              <span class="entry-label">ENTRY 01</span>
+              <strong>HASH</strong>
+            </div>
+            <div class="chain-arrow">↓</div>
+            <div class="chain-entry">
+              <span class="entry-label">ENTRY 02</span>
+              <strong>PREVIOUS HASH + CURRENT DATA</strong>
+            </div>
+            <div class="chain-arrow">↓</div>
+            <div class="chain-entry">
+              <span class="entry-label">ENTRY 03</span>
+              <strong>PREVIOUS HASH + CURRENT DATA</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="audit-legend">
+          <span>SHA-256 CHAINED AUDIT LOG</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="feasibility" class="section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">13</span>
+          <h2>Feasibility &amp; Viability</h2>
+        </div>
+
+        <div class="feasibility-grid">
+          <div class="feasibility-column">
+            <h3>Technical</h3>
+            <div class="pair-block">
+              <span class="pair-label">Challenges</span>
+              <ul>
+                <li>SSD wear-leveling defeats traditional erasure</li>
+                <li>OS artifacts such as journals, caches and swap may survive</li>
+                <li>Cross-platform filesystem complexity</li>
+              </ul>
+            </div>
+            <div class="pair-block">
+              <span class="pair-label">Solution</span>
+              <ul>
+                <li>Rust for safe low-level I/O</li>
+                <li>Native ATA Secure Erase / NVMe Sanitize for SSDs</li>
+                <li>ECLIPSE's own carving engine self-verifies deletion</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feasibility-column">
+            <h3>Strategic</h3>
+            <div class="pair-block">
+              <span class="pair-label">Challenges</span>
+              <ul>
+                <li>SSD wear-leveling</li>
+                <li>OS artifacts</li>
+                <li>Cross-platform filesystem complexity</li>
+              </ul>
+            </div>
+            <div class="pair-block">
+              <span class="pair-label">Solution</span>
+              <ul>
+                <li>Rust</li>
+                <li>Native storage sanitization commands</li>
+                <li>Self-verifying carving engine</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feasibility-column">
+            <h3>Economic</h3>
+            <div class="pair-block">
+              <span class="pair-label">Challenges</span>
+              <ul>
+                <li>Long procurement cycles</li>
+                <li>Rust talent premium</li>
+                <li>Competition with free tools</li>
+              </ul>
+            </div>
+            <div class="pair-block">
+              <span class="pair-label">Solution</span>
+              <ul>
+                <li>One platform replaces multiple point tools</li>
+                <li>Automated chain-of-custody logging</li>
+                <li>Agency-license model</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feasibility-column">
+            <h3>Market</h3>
+            <div class="pair-block">
+              <span class="pair-label">Challenges</span>
+              <ul>
+                <li>Fragmented buyer landscape</li>
+                <li>No single persona spans all three modules</li>
+              </ul>
+            </div>
+            <div class="pair-block">
+              <span class="pair-label">Solution</span>
+              <ul>
+                <li>Beachhead: Forensic laboratories requiring image → investigate → destroy → verify</li>
+                <li>Expansion: Corporate incident response + eDiscovery</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow inverse">14</span>
+          <h2>Impact &amp; Benefits</h2>
+        </div>
+
+        <div class="audience-grid">
+          <article class="audience-card">
+            <h3>Forensic Investigators</h3>
+            <p>3-mode carving helps address the speed/completeness tradeoff.</p>
+          </article>
+          <article class="audience-card">
+            <h3>Law Enforcement</h3>
+            <p>Chain-of-custody continuity from recovery through sanitization.</p>
+          </article>
+          <article class="audience-card">
+            <h3>Cybersecurity Units</h3>
+            <p>Targeted scanning can provide actionable leads rapidly.</p>
+          </article>
+          <article class="audience-card">
+            <h3>Government Agencies</h3>
+            <p>Air-gap-ready and fully offline operation.</p>
+          </article>
+          <article class="audience-card">
+            <h3>Judiciary / Legal Teams</h3>
+            <p>Scan-mode disclosures support transparent evidence handling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="broad-benefits" class="section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">15</span>
+          <h2>Broader Benefits</h2>
+        </div>
+
+        <div class="feature-grid four-up">
+          <article class="feature-card dark-card">
+            <div class="feature-index">01</div>
+            <h3>Operational Efficiency</h3>
+            <p>One platform. One report. One audit trail.</p>
+          </article>
+          <article class="feature-card dark-card">
+            <div class="feature-index">02</div>
+            <h3>Legal Integrity</h3>
+            <p>Separate AI-assisted and deterministic modes.</p>
+          </article>
+          <article class="feature-card dark-card">
+            <div class="feature-index">03</div>
+            <h3>Economic</h3>
+            <p>One integrated platform replacing multiple point tools.</p>
+          </article>
+          <article class="feature-card dark-card">
+            <div class="feature-index">04</div>
+            <h3>Strategic / Digital Sovereignty</h3>
+            <p>Domestic forensic tooling for sensitive workflows.</p>
+          </article>
+        </div>
+
+        <div class="benefit-tags">
+          <span>Investigator</span>
+          <span>Legal System</span>
+          <span>Organisation</span>
+          <span>National Security</span>
+          <span>Digital Sovereignty</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="references" class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow inverse">16</span>
+          <h2>Research &amp; References</h2>
+        </div>
+
+        <div class="reference-grid">
+          <div class="reference-block">
+            <h3>Academic / Technical Papers</h3>
+            <ul>
+              <li>Garfinkel, S. — Digital Forensics Research: The Next 10 Years, DFRWS 2010</li>
+              <li>Carrier, B. — File System Forensic Analysis, Addison-Wesley, 2005</li>
+              <li>Garfinkel, S. — Carving Contiguous and Fragmented Files with Fast Object Validation, DFRWS 2007</li>
+              <li>Richard, G. &amp; Roussev, V. — Scalp el: A Frugal, High Performance File Carver, DFRWS 2005</li>
+              <li>Poisel, R. &amp; Tjoa, S. — Forensics Investigation of Remnant Data on Mobile Devices, 2011</li>
+            </ul>
+          </div>
+
+          <div class="reference-block">
+            <h3>Standards &amp; Compliance</h3>
+            <ul>
+              <li>NIST SP 800-88 Rev.1 — Guidelines for Media Sanitization</li>
+              <li>DoD 5220.22-M — National Industrial Security Program Operating Manual</li>
+              <li>HMG IS5 — Secure Sanitisation of Protectively Marked Information or Sensitive Information</li>
+              <li>SWGDE — Best Practices for Digital and Multimedia Evidence</li>
+            </ul>
+          </div>
+
+          <div class="reference-block">
+            <h3>Tools Referenced</h3>
+            <ul>
+              <li>Autopsy / The Sleuth Kit</li>
+              <li>PhotoRec / TestDisk</li>
+              <li>Scalpel</li>
+              <li>Foremost</li>
+              <li>Blancco Drive Eraser</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dark evidence-visuals">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">Evidence Lab</span>
+          <h2>Real forensic operating context</h2>
+        </div>
+
+        <div class="visual-cards">
+          <article class="visual-card">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80"
+              alt="Digital evidence and hardware preparation" />
+            <div class="visual-copy">
+              <span>Drive Imaging</span>
+              <strong>Evidence intake and archival integrity</strong>
+            </div>
+          </article>
+
+          <article class="visual-card">
+            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=80"
+              alt="Secure server and network monitoring" />
+            <div class="visual-copy">
+              <span>Secure Infrastructure</span>
+              <strong>Protected indexing and audit continuity</strong>
+            </div>
+          </article>
+
+          <article class="visual-card">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80"
+              alt="Cybersecurity analyst monitoring systems" />
+            <div class="visual-copy">
+              <span>Response Workflow</span>
+              <strong>Investigation and verification in live operations</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">17</span>
+          <h2>Complete Product Dashboard</h2>
+        </div>
+
+        <div class="product-dashboard">
+          <aside class="sidebar">
+            <div class="sidebar-header">Cases</div>
+            <ul>
+              <li class="active">CASE-26149</li>
+              <li>Evidence</li>
+              <li>Recovery</li>
+              <li>File Erasure</li>
+              <li>Drive Sanitization</li>
+              <li>Verification</li>
+              <li>Audit Logs</li>
+              <li>Reports</li>
+              <li>Settings</li>
+            </ul>
+          </aside>
+
+          <div class="main-panel">
+            <div class="panel-topbar">
+              <span>Active Case</span>
+              <span class="status-chip success">Case 26149</span>
+            </div>
+            <div class="panel-metrics">
+              <div class="mini-box">
+                <span>Drive Status</span>
+                <strong>Verified</strong>
+              </div>
+              <div class="mini-box">
+                <span>Scan Mode</span>
+                <strong>Full Search</strong>
+              </div>
+              <div class="mini-box">
+                <span>Progress</span>
+                <strong>94%</strong>
+              </div>
+              <div class="mini-box">
+                <span>Recovered Files</span>
+                <strong>1,284</strong>
+              </div>
+              <div class="mini-box">
+                <span>Sanitization Status</span>
+                <strong>Awaiting</strong>
+              </div>
+              <div class="mini-box">
+                <span>Verification Status</span>
+                <strong>Pass</strong>
+              </div>
+            </div>
+          </div>
+
+          <aside class="right-panel">
+            <div class="right-header">Live Audit Stream</div>
+            <div class="audit-stream">
+              <div><span>12:14:09</span>
+                <p>Hash verified: SHA-256 842f...</p>
+              </div>
+              <div><span>12:16:40</span>
+                <p>Scan started: full-sector scan</p>
+              </div>
+              <div><span>12:20:15</span>
+                <p>Recovered artifact: JPEG / LBA 0x0012F200</p>
+              </div>
+              <div><span>12:22:48</span>
+                <p>Confidence score: 0.987</p>
+              </div>
+              <div><span>12:26:12</span>
+                <p>Audit entry linked to previous hash</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow inverse">18</span>
+          <h2>End-to-End System Demonstration</h2>
+        </div>
+
+        <div class="demo-simulator">
+          <div class="sim-steps">
+            <div class="sim-step active"><span>CASE</span></div>
+            <div class="sim-step"><span>DRIVE</span></div>
+            <div class="sim-step"><span>SCAN MODE</span></div>
+            <div class="sim-step"><span>RECOVERY / SANITIZATION</span></div>
+            <div class="sim-step"><span>VERIFICATION</span></div>
+            <div class="sim-step"><span>AUDIT</span></div>
+            <div class="sim-step"><span>REPORT</span></div>
+          </div>
+
+          <div class="sim-panel">
+            <div class="sim-controls">
+              <label>
+                Case
+                <select id="caseSelect">
+                  <option>Case 26149 — Contract dispute</option>
+                  <option>Case 16120 — Insider threat</option>
+                  <option>Case 30248 — Device wipe review</option>
+                </select>
+              </label>
+              <label>
+                Drive
+                <select id="driveSelect">
+                  <option>WD 8TB SATA HDD</option>
+                  <option>Samsung 1TB NVMe SSD</option>
+                  <option>Seagate 2TB External USB</option>
+                </select>
+              </label>
+              <label>
+                Scan Mode
+                <select id="modeSelect">
+                  <option value="quick">Quick Search</option>
+                  <option value="targeted">Targeted AI Search</option>
+                  <option value="full">Full Search</option>
+                </select>
+              </label>
+            </div>
+
+            <div id="simResult" class="sim-result"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prototype" class="section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">19</span>
+          <h2>Experience ECLIPSE</h2>
+        </div>
+
+        <div class="prototype-panel">
+          <div class="prototype-copy">
+            <div class="eyebrow mono">Prototype</div>
+            <h3>Experience the forensic workflow before deployment.</h3>
+            <p>Launch the interactive product preview and review an end-to-end case with recovery, verification, and
+              audit output.</p>
+            <div class="prototype-actions">
+              <a href="#demo" class="button button-primary">Launch Prototype</a>
+              <a href="#overview" class="button button-secondary">Watch Demo</a>
+            </div>
+          </div>
+
+          <div class="prototype-window">
+            <div class="windowbar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="prototype-ui">
+              <div class="mini-panel"><strong>Case ID</strong><span>26149</span></div>
+              <div class="mini-panel"><strong>Drive</strong><span>WD 8TB</span></div>
+              <div class="mini-panel"><strong>Scan</strong><span>Targeted AI</span></div>
+              <div class="mini-panel"><strong>Verification</strong><span>PASS</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow inverse">20 &mdash; SIH PS ID: SIH26149</span>
+          <h2>Team Lunar</h2>
+        </div>
+
+        <div class="team-grid" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+          <div class="team-card leader">
+            <div class="avatar leader">R</div>
+            <h3>Rajesh .K</h3>
+            <span class="leader-badge" style="color: black;">★ Team Leader</span>
+          </div>
+          <div class="team-card">
+            <div class="avatar">S</div>
+            <h3>Sachin .BM</h3>
+            <span style="color: black;">Team Member</span>
+          </div>
+          <div class="team-card">
+            <div class="avatar">V</div>
+            <h3>Vinayakmoorthi .AV</h3>
+            <span style="color: black;">Team Member</span>
+          </div>
+          <div class="team-card">
+            <div class="avatar">D</div>
+            <h3>Deepak .M</h3>
+            <span style="color: black;">Team Member</span>
+          </div>
+          <div class="team-card">
+            <div class="avatar">A</div>
+            <h3>Afsal Shaliq .T</h3>
+            <span style="color: black;">Team Member</span>
+          </div>
+          <div class="team-card">
+            <div class="avatar">M</div>
+            <h3>Manimala .C</h3>
+            <span style="color: black;">Team Member</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-name">ECLIPSE</div>
+        <p>Erase without doubt.<br />Recover without compromise.</p>
+        <p>Smart India Hackathon 2026</p>
+        <p>Problem Statement 26149</p>
+      </div>
+
+      <div>
+        <h4>Theme</h4>
+        <p>Blockchain &amp; Cybersecurity</p>
+        <h4>Team</h4>
+        <p>Lunar</p>
+      </div>
+
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li>Overview</li>
+          <li>Problem</li>
+          <li>Solution</li>
+          <li>Technical Approach</li>
+          <li>Feasibility</li>
+          <li>Impact</li>
+          <li>References</li>
+          <li>Prototype</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
