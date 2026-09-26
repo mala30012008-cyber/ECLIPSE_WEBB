@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -34,8 +34,8 @@
     </nav>
 
     <div class="nav-actions">
-      <a class="button button-primary" href="#prototype">View Prototype</a>
-      <a class="button button-secondary" href="#technical-approach">Explore Architecture</a>
+      <a class="button button-primary" href="https://github.com/Fresh-MC/Eclipse">View Prototype</a>
+      <a class="button button-secondary" href="https://youtu.be/HWbJ-GG2crc">Watch Demo</a>
     </div>
   </header>
 
@@ -153,22 +153,25 @@
           <button class="gallery-arrow prev" aria-label="Previous image">←</button>
           <div class="gallery-window">
             <figure class="gallery-slide active">
-              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+              <img src="https://www.forensicfocus.com/stable/wp-content/uploads/2022/03/febhead.png"
                 alt="Digital forensics analyst at a forensic workstation" />
               <figcaption>High-trust forensic analysis environment</figcaption>
             </figure>
             <figure class="gallery-slide">
-              <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
+              <img
+                src="https://computerforensicslab.co.uk/wp-content/uploads/2026/05/a-guide-to-forensic-imaging-process-featured.webp"
                 alt="Computer hardware and forensic evidence imaging" />
               <figcaption>Evidence handling and drive examination</figcaption>
             </figure>
             <figure class="gallery-slide">
-              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWWKQIWT0S09D3h9jB_m2uCx-HraaDAdJvRoPUDesW65VibBUxhW-AmmY&s=10"
                 alt="Server equipment in secure data center" />
               <figcaption>Secure infrastructure and data integrity controls</figcaption>
             </figure>
             <figure class="gallery-slide">
-              <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80"
+              <img
+                src="https://isg-one.com/images/default-source/default-album/powerful-imperative-of-digital-forensics-and-incident-response.tmb-th1903-746.jpg?Culture=en&sfvrsn=5352d531_2"
                 alt="Cybersecurity professional working with enterprise systems" />
               <figcaption>Operational forensic and cybersecurity response</figcaption>
             </figure>
@@ -215,15 +218,15 @@
 
         <div class="workflow-sequence">
           <span>ACQUIRE</span>
-          <span class="arrow">↓</span>
+          <span class="arrow">&rarr;</span>
           <span>SCAN</span>
-          <span class="arrow">↓</span>
+          <span class="arrow">&rarr;</span>
           <span>ANALYZE</span>
-          <span class="arrow">↓</span>
+          <span class="arrow">&rarr;</span>
           <span>SANITIZE</span>
-          <span class="arrow">↓</span>
+          <span class="arrow">&rarr;</span>
           <span>VERIFY</span>
-          <span class="arrow">↓</span>
+          <span class="arrow">&rarr;</span>
           <span>REPORT</span>
         </div>
 
@@ -444,20 +447,32 @@
               <div class="artifact-row head">
                 <span>LBA Range</span>
                 <span>Classification</span>
-                <span>Confidence Score</span>
-                <span>Recovery Status</span>
+                <span>Confidence</span>
+                <span>Status</span>
               </div>
               <div class="artifact-row">
                 <span>0x0012F200 — 0x0012F7FF</span>
-                <span>JPEG</span>
-                <span>0.987</span>
-                <span>Recovered</span>
+                <span>JPEG (EXIF)</span>
+                <span style="color: #34d399; font-weight: 600;">0.987</span>
+                <span class="status-chip success" style="padding: 2px 8px; font-size: 10px;">Recovered</span>
               </div>
               <div class="artifact-row">
                 <span>0x00AA6000 — 0x00AA6DFF</span>
-                <span>DOCX</span>
-                <span>0.942</span>
-                <span>Recovered</span>
+                <span>DOCX (XML)</span>
+                <span style="color: #34d399; font-weight: 600;">0.942</span>
+                <span class="status-chip success" style="padding: 2px 8px; font-size: 10px;">Recovered</span>
+              </div>
+              <div class="artifact-row">
+                <span>0x00C41000 — 0x00C427FF</span>
+                <span>PDF (v1.7)</span>
+                <span style="color: #34d399; font-weight: 600;">0.991</span>
+                <span class="status-chip success" style="padding: 2px 8px; font-size: 10px;">Recovered</span>
+              </div>
+              <div class="artifact-row">
+                <span>0x00F89000 — 0x00F8B1FF</span>
+                <span>SQLite DB</span>
+                <span style="color: #34d399; font-weight: 600;">0.978</span>
+                <span class="status-chip success" style="padding: 2px 8px; font-size: 10px;">Recovered</span>
               </div>
             </div>
           </div>
@@ -474,13 +489,13 @@
 
         <div class="linear-flow">
           <span>FILE SELECTED</span>
-          <span class="arrow">↓</span>
+          <span class="arrow">&rarr;</span>
           <span>DETECTION</span>
-          <span class="arrow">↓</span>
+          <span class="arrow">&rarr;</span>
           <span>HDD / SSD</span>
-          <span class="arrow">↓</span>
+          <span class="arrow">&rarr;</span>
           <span>Appropriate deletion path</span>
-          <span class="arrow">↓</span>
+          <span class="arrow">&rarr;</span>
           <span>VERIFICATION</span>
         </div>
 
@@ -559,7 +574,7 @@
 
         <div class="concept-visuals">
           <article class="concept-card">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1000&q=80"
+            <img src="https://images.pexels.com/photos/10481302/pexels-photo-10481302.jpeg"
               alt="Fast forensic triage and urgent evidence review" />
             <div class="concept-copy">
               <span>Quick Search</span>
@@ -567,7 +582,7 @@
             </div>
           </article>
           <article class="concept-card">
-            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80"
+            <img src="https://images.pexels.com/photos/34804018/pexels-photo-34804018.jpeg"
               alt="AI-assisted cyber analysis and decision support" />
             <div class="concept-copy">
               <span>Targeted AI</span>
@@ -575,7 +590,7 @@
             </div>
           </article>
           <article class="concept-card">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80"
+            <img src="https://images.pexels.com/photos/5475752/pexels-photo-5475752.jpeg"
               alt="Deep digital forensic scan on secure server infrastructure" />
             <div class="concept-copy">
               <span>Full Search</span>
@@ -603,15 +618,15 @@
 
         <div class="ai-flow">
           <span>ARTIFACTS</span>
-          <span>↓</span>
+          <span class="arrow">&rarr;</span>
           <span>XGBOOST</span>
-          <span>↓</span>
+          <span class="arrow">&rarr;</span>
           <span>SMART HEALTH SIGNALS</span>
-          <span>↓</span>
+          <span class="arrow">&rarr;</span>
           <span>CONFIDENCE PENALTY ON DEGRADED REGIONS</span>
-          <span>↓</span>
+          <span class="arrow">&rarr;</span>
           <span>RUST + ONNX</span>
-          <span>↓</span>
+          <span class="arrow">&rarr;</span>
           <span>AI-QUARANTINED OUTPUT</span>
         </div>
 
@@ -680,41 +695,47 @@
 
         <div class="timeline">
           <div class="timeline-step">CASE CREATED</div>
-          <div class="timeline-arrow">↓</div>
+          <div class="timeline-arrow">&rarr;</div>
           <div class="timeline-step">DRIVE IDENTIFIED</div>
-          <div class="timeline-arrow">↓</div>
+          <div class="timeline-arrow">&rarr;</div>
           <div class="timeline-step">HASH VERIFIED</div>
-          <div class="timeline-arrow">↓</div>
+          <div class="timeline-arrow">&rarr;</div>
           <div class="timeline-step">SCAN STARTED</div>
-          <div class="timeline-arrow">↓</div>
+          <div class="timeline-arrow">&rarr;</div>
           <div class="timeline-step">RECOVERY / SANITIZATION</div>
-          <div class="timeline-arrow">↓</div>
+          <div class="timeline-arrow">&rarr;</div>
           <div class="timeline-step">VERIFICATION</div>
-          <div class="timeline-arrow">↓</div>
+          <div class="timeline-arrow">&rarr;</div>
           <div class="timeline-step">REPORT GENERATED</div>
         </div>
 
         <div class="hash-chain-wrap">
           <div class="hash-chain">
             <div class="chain-entry">
-              <span class="entry-label">ENTRY 01</span>
-              <strong>HASH</strong>
+              <span class="entry-label">BLOCK 01 &bull; GENESIS ACQUISITION</span>
+              <strong>SHA-256: 842f9a11...c014</strong>
+              <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 4px;">Hardware
+                Serial + Raw DD Root</div>
             </div>
-            <div class="chain-arrow">↓</div>
+            <div class="chain-arrow">&rarr;</div>
             <div class="chain-entry">
-              <span class="entry-label">ENTRY 02</span>
-              <strong>PREVIOUS HASH + CURRENT DATA</strong>
+              <span class="entry-label">BLOCK 02 &bull; EVIDENCE CARVE</span>
+              <strong>SHA-256: e3b0c442...98f2</strong>
+              <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 4px;">Prev:
+                842f... + 1,284 Carved LBAs</div>
             </div>
-            <div class="chain-arrow">↓</div>
+            <div class="chain-arrow">&rarr;</div>
             <div class="chain-entry">
-              <span class="entry-label">ENTRY 03</span>
-              <strong>PREVIOUS HASH + CURRENT DATA</strong>
+              <span class="entry-label">BLOCK 03 &bull; SANITIZE &amp; VERIFY</span>
+              <strong>SHA-256: 9d1f4b88...7a33</strong>
+              <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 4px;">Prev:
+                e3b0... + Zero Remnant Proof</div>
             </div>
           </div>
         </div>
 
         <div class="audit-legend">
-          <span>SHA-256 CHAINED AUDIT LOG</span>
+          <span>&#10003; SHA-256 CRYPTOGRAPHICALLY LINKED FORENSIC LEDGER &bull; IMMUTABLE</span>
         </div>
       </div>
     </section>
@@ -941,7 +962,7 @@
           </article>
 
           <article class="visual-card">
-            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=80"
+            <img src="https://images.pexels.com/photos/37605911/pexels-photo-37605911.jpeg"
               alt="Secure server and network monitoring" />
             <div class="visual-copy">
               <span>Secure Infrastructure</span>
@@ -950,7 +971,7 @@
           </article>
 
           <article class="visual-card">
-            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80"
+            <img src="https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg"
               alt="Cybersecurity analyst monitoring systems" />
             <div class="visual-copy">
               <span>Response Workflow</span>
@@ -1108,7 +1129,7 @@
               audit output.</p>
             <div class="prototype-actions">
               <a href="#demo" class="button button-primary">Launch Prototype</a>
-              <a href="#overview" class="button button-secondary">Watch Demo</a>
+              <a href="#technical-approach" class="button button-secondary">Explore Architecture</a>
             </div>
           </div>
 
@@ -1136,36 +1157,36 @@
           <h2>Team Lunar</h2>
         </div>
 
-        <div class="team-grid" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+        <div class="team-grid">
           <div class="team-card leader">
             <div class="avatar leader">R</div>
             <h3>Rajesh .K</h3>
-            <span class="leader-badge" style="color: black;">★ Team Leader</span>
+            <span class="leader-badge">★ Team Leader</span>
           </div>
           <div class="team-card">
             <div class="avatar">S</div>
             <h3>Sachin .BM</h3>
-            <span style="color: black;">Team Member</span>
+            <span class="member-badge">Team Member</span>
           </div>
           <div class="team-card">
             <div class="avatar">V</div>
             <h3>Vinayakmoorthi .AV</h3>
-            <span style="color: black;">Team Member</span>
+            <span class="member-badge">Team Member</span>
           </div>
           <div class="team-card">
             <div class="avatar">D</div>
             <h3>Deepak .M</h3>
-            <span style="color: black;">Team Member</span>
+            <span class="member-badge">Team Member</span>
           </div>
           <div class="team-card">
             <div class="avatar">A</div>
             <h3>Afsal Shaliq .T</h3>
-            <span style="color: black;">Team Member</span>
+            <span class="member-badge">Team Member</span>
           </div>
           <div class="team-card">
             <div class="avatar">M</div>
             <h3>Manimala .C</h3>
-            <span style="color: black;">Team Member</span>
+            <span class="member-badge">Team Member</span>
           </div>
         </div>
       </div>

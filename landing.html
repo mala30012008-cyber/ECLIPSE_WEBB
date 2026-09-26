@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECLIPSE Crypto - Secure Digital Asset Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body class="dark">
+  <!-- Hero Section -->
+  <section class="min-h-[700px] flex flex-col items-center justify-center px-6 pt-20 pb-14 bg-background">
+    <div class="text-center space-y-6 max-w-4xl">
+      <h1 class="text-5xl font-bold text-foreground">
+        Secure Your Digital Assets<br />
+        <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          Institutional-Grade Crypto Protection
+        </span>
+      </h1>
+      <p class="text-xl text-muted max-w-2xl">
+        ECLIPSE Crypto combines military-grade encryption with intuitive wallet management
+        to protect your digital assets against evolving threats.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#features" class="button button-primary px-8 py-3">Get Started</a>
+        <a href="#security" class="button button-secondary px-8 py-3">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-background">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-foreground">Built for Security-First Institutions</h2>
+        <p class="text-lg text-muted max-w-3xl mx-auto">
+          Advanced protection mechanisms engineered for hedge funds, family offices,
+          and enterprise treasury management.
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Security Card -->
+        <div class="glass-card bg-background bg-opacity-30 backdrop-blur-md border border-border border-opacity-20 shadow-sm hover:shadow-lg transition-all p-8">
+          <div class="flex items-center space-x-4 mb-6">
+            <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-foreground">Military-Grade Encryption</h3>
+          </div>
+          <p class="text-muted">
+            AES-256 encryption with hardware security module (HSM) integration
+            for private key protection at rest and in transit.
+          </p>
+        </div>
+
+        <!-- Wallet Integration Card -->
+        <div class="glass-card bg-background bg-opacity-30 backdrop-blur-md border border-border border-opacity-20 shadow-sm hover:shadow-lg transition-all p-8">
+          <div class="flex items-center space-x-4 mb-6">
+            <div class="w-12 h-12 bg-secondary bg-opacity-10 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.2 3H13"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-foreground">Multi-Chain Wallet Support</h3>
+          </div>
+          <p class="text-muted">
+            Seamless integration with Ledger, Trezor, MetaMask, and WalletConnect
+            for institutional-grade asset management.
+          </p>
+        </div>
+
+        <!-- Compliance Card -->
+        <div class="glass-card bg-background bg-opacity-30 backdrop-blur-md border border-border border-opacity-20 shadow-sm hover:shadow-lg transition-all p-8">
+          <div class="flex items-center space-x-4 mb-6">
+            <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7 20h10a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-foreground">Regulatory Compliance</h3>
+          </div>
+          <p class="text-muted">
+            SOC 2 Type II, ISO 27001, and GDPR compliant with audit trails
+            and regulatory reporting capabilities.
+          </p>
+        </div>
+
+        <!-- Performance Card -->
+        <div class="glass-card bg-background bg-opacity-30 backdrop-blur-md border border-border border-opacity-20 shadow-sm hover:shadow-lg transition-all p-8">
+          <div class="flex items-center space-x-4 mb-6">
+            <div class="w-12 h-12 bg-muted bg-opacity-10 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-foreground">High-Performance Engine</h3>
+          </div>
+          <p class="text-muted">
+            Sub-millisecond transaction processing with 100K+ TPS capacity
+            and horizontal scalability for institutional workloads.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price Chart Section -->
+  <section id="chart" class="py-20 section-light">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-foreground">Real-Time Market Intelligence</h2>
+        <p class="text-lg text-muted max-w-3xl mx-auto">
+          Monitor institutional-grade price feeds with advanced analytics
+          and customizable alerting systems.
+        </p>
+      </div>
+
+      <div class="glass-card bg-background bg-opacity-30 backdrop-blur-md border border-border border-opacity-20 shadow-sm p-8">
+        <div class="mb-6 flex justify-between items-center">
+          <h3 class="text-xl font-semibold text-foreground">BTC/USD Institutional Feed</h3>
+          <div class="flex space-x-3">
+            <span class="px-3 py-1 text-xs rounded bg-success bg-opacity-20 text-success">LIVE</span>
+            <span class="text-muted">Updated 2s ago</span>
+          </div>
+        </div>
+
+        <div id="priceChart" class="h-96 w-full"></div>
+
+        <div class="mt-6 flex flex-wrap gap-4 text-sm">
+          <div class="flex items-center space-x-2">
+            <div class="w-3 h-3 bg-primary rounded"></div>
+            <span class="text-muted">BTC: $67,842.50</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <div class="w-3 h-3 bg-secondary rounded"></div>
+            <span class="text-muted">ETH: $3,842.10</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <div class="w-3 h-3 bg-accent rounded"></div>
+            <span class="text-muted">SOL: $185.30</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <div class="w-3 h-3 bg-destructive rounded"></div>
+            <span class="text-muted">24h Vol: $42.1B</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Highlights Section -->
+  <section id="security" class="py-20 bg-background">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-foreground">Security Architecture</h2>
+        <p class="text-lg text-muted max-w-3xl mx-auto">
+          Multi-layered protection designed to defend against sophisticated
+          cyber threats while maintaining operational efficiency.
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Cold Storage -->
+        <div class="glass-card bg-background bg-opacity-30 backdrop-blur-md border border-border border-opacity-20 shadow-sm hover:shadow-lg transition-all p-6">
+          <div class="mb-4">
+            <div class="w-10 h-10 bg-primary bg-opacity-10 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21L5-4l6 6v6h12l-6 6z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-foreground">Air-Gapped Cold Storage</h3>
+          </div>
+          <p class="text-muted text-sm">
+            95% of assets stored in geographically distributed,
+            air-gapped vaults with biometric access controls.
+          </p>
+        </div>
+
+        <!-- Multi-Sig -->
+        <div class="glass-card bg-background bg-opacity-30 backdrop-blur-md border border-border border-opacity-20 shadow-sm hover:shadow-lg transition-all p-6">
+          <div class="mb-4">
+            <div class="w-10 h-10 bg-secondary bg-opacity-10 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-foreground">Threshold Multi-Signature</h3>
+          </div>
+          <p class="text-muted text-sm">
+            Require multiple authorized signatures for transactions
+            with customizable quorum settings (2-of-3, 3-of-5, etc.).
+          </p>
+        </div>
+
+        <!-- Real-Time Monitoring -->
+        <div class="glass-card bg-background bg-opacity-30 backdrop-blur-md border border-border border-opacity-20 shadow-sm hover:shadow-lg transition-all p-6">
+          <div class="mb-4">
+            <div class="w-10 h-10 bg-accent bg-opacity-10 rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16l-4-4 3-3"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-foreground">AI-Powered Threat Detection</h3>
+          </div>
+          <p class="text-muted text-sm">
+            Machine learning models analyze transaction patterns
+            to detect and prevent fraudulent activities in real-time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Indicators Section -->
+  <section class="py-20 bg-background">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-foreground">Trusted by Industry Leaders</h2>
+        <p class="text-lg text-muted max-w-3xl mx-auto">
+          Institutional clients rely on ECLIPSE for secure, compliant,
+          and high-performance digital asset management.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-8">
+        <div class="flex items-center space-x-4 p-4 bg-background bg-opacity-20 backdrop-blur-sm border border-border border-opacity-10 rounded-xl">
+          <div class="w-8 h-8 bg-primary bg-opacity-20 rounded flex items-center justify-center">
+            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7 20h10a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-foreground">SOC 2 Type II Certified</h3>
+            <p class="text-muted text-sm">Independent audit of security controls</p>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-4 p-4 bg-background bg-opacity-20 backdrop-blur-sm border border-border border-opacity-10 rounded-xl">
+          <div class="w-8 h-8 bg-secondary bg-opacity-20 rounded flex items-center justify-center">
+            <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-foreground">ISO 27001 Compliant</h3>
+            <p class="text-muted text-sm">Information security management standard</p>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-4 p-4 bg-background bg-opacity-20 backdrop-blur-sm border border-border border-opacity-10 rounded-xl">
+          <div class="w-8 h-8 bg-accent bg-opacity-20 rounded flex items-center justify-center">
+            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-foreground">Insured Custody</h3>
+            <p class="text-muted text-sm">Up to $500M in digital asset insurance</p>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-4 p-4 bg-background bg-opacity-20 backdrop-blur-sm border border-border border-opacity-10 rounded-xl">
+          <div class="w-8 h-8 bg-muted bg-opacity-20 rounded flex items-center justify-center">
+            <svg class="w-4 h-4 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16l-4-4 3-3"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-foreground">24/7 Security Operations</h3>
+            <p class="text-muted text-sm">Continuous monitoring and incident response</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-section-light">
+    <div class="container mx-auto px-6">
+      <div class="text-center space-y-8">
+        <h2 class="text-4xl font-bold text-foreground">Ready to Secure Your Digital Assets?</h2>
+        <p class="text-lg text-muted max-w-2xl mx-auto">
+          Join leading institutions that trust ECLIPSE for their cryptocurrency
+          storage, management, and transaction needs.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#features" class="button button-primary px-8 py-3 text-lg">Get Started Today</a>
+          <a href="#security" class="button button-outline px-8 py-3 text-lg">Review Security Docs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-background border-t border-border border-opacity-20">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0">
+        <div class="text-center md:text-left">
+          <h3 class="text-lg font-semibold text-foreground mb-2">ECLIPSE Crypto</h3>
+          <p class="text-sm text-muted">Secure Digital Asset Platform</p>
+          <p class="text-sm text-muted">© 2026 ECLIPSE. All rights reserved.</p>
+        </div>
+        <div class="flex flex-col items-center md:flex-row md:space-x-8 space-y-4 md:space-y-0">
+          <a href="#" class="text-sm text-muted hover:text-foreground transition-colors">Security</a>
+          <a href="#" class="text-sm text-muted hover:text-foreground transition-colors">Compliance</a>
+          <a href="#" class="text-sm text-muted hover:text-foreground transition-colors">Docs</a>
+          <a href="#" class="text-sm text-muted hover:text-foreground transition-colors">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize price chart
+    const ctx = document.getElementById('priceChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['9:00', '9:30', '10:00', '10:30', '11:00', '11:30', '12:00'],
+        datasets: [{
+          label: 'BTC/USD',
+          data: [67200, 67450, 67100, 67650, 67800, 67500, 67842],
+          borderColor: 'rgb(59, 130, 246)',
+          backgroundColor: 'rgba(59, 130, 246, 0.1)',
+          tension: 0.3,
+          fill: true,
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            backgroundColor: 'rgba(17, 24, 39, 0.9)',
+            titleColor: '#ffffff',
+            bodyColor: '#e5e7eb',
+            borderColor: 'rgb(59, 130, 246)',
+            borderWidth: 1
+          }
+        },
+        scales: {
+          y: {
+            grid: {
+              color: 'rgba(148, 163, 184, 0.1)'
+            },
+            ticks: {
+              color: '#a5b0be',
+              callback: function(value) {
+                return '$' + value.toLocaleString();
+              }
+            }
+          },
+          x: {
+            grid: {
+              display: false
+            },
+            ticks: {
+              color: '#a5b0be'
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
